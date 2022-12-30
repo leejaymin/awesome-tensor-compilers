@@ -32,14 +32,16 @@ A list of awesome compiler projects and papers for tensor computation and deep l
 - [nnfusion: A Flexible and Efficient Deep Neural Network Compiler](https://github.com/microsoft/nnfusion)
 - [Hummingbird: Compiling Trained ML Models into Tensor Computation](https://github.com/microsoft/hummingbird)
 - [Triton: An Intermediate Language and Compiler for Tiled Neural Network Computations](https://github.com/openai/triton)
+- [AITemplate: A Python framework which renders neural network into high performance CUDA/HIP C++ code](https://github.com/facebookincubator/AITemplate)
 - [Tiramisu: A Polyhedral Compiler for Expressing Fast and Portable Code](http://tiramisu-compiler.org/)
 - [TensorComprehensions: Framework-Agnostic High-Performance Machine Learning Abstractions](https://facebookresearch.github.io/TensorComprehensions/)
 - [PlaidML: A Platform for Making Deep Learning Work Everywhere](https://github.com/plaidml/plaidml)
 - [BladeDISC: An End-to-End DynamIc Shape Compiler for Machine Learning Workloads](https://github.com/alibaba/BladeDISC)
 - [TACO: The Tensor Algebra Compiler](http://tensor-compiler.org/)
 - [Nebulgym: Easy-to-use Library to Accelerate AI Training](https://github.com/nebuly-ai/nebulgym)
-- [Nebullvm: Easy-to-use Library to Boost AI Inference](https://github.com/nebuly-ai/nebullvm)
+- [Speedster: Automatically apply SOTA optimization techniques to achieve the maximum inference speed-up on your hardware](https://github.com/nebuly-ai/nebullvm/tree/main/apps/accelerate/speedster)
 - [NN-512: A Compiler That Generates C99 Code for Neural Net Inference](https://nn-512.com/)
+- [DaCeML: A Data-Centric Compiler for Machine Learning](https://github.com/spcl/daceml)
 
 ## Papers
 
@@ -48,7 +50,9 @@ A list of awesome compiler projects and papers for tensor computation and deep l
 - [An In-depth Comparison of Compilers for DeepNeural Networks on Hardware](https://ieeexplore.ieee.org/document/8782480) by Yu Xing et al., ICESS 2019
 
 ### Compiler and IR Design
-- [TensorIR: An Abstraction for Automatic Tensorized Program Optimization](https://arxiv.org/abs/2207.04296) by Siyuan Feng, Bohan Hou et al., arXiv 2022
+- [TensorIR: An Abstraction for Automatic Tensorized Program Optimization](https://arxiv.org/abs/2207.04296) by Siyuan Feng, Bohan Hou et al., ASPLOS 2023
+- [Exocompilation for Productive Programming of Hardware Accelerators](https://dl.acm.org/doi/pdf/10.1145/3519939.3523446) by Yuka Ikarashi, Gilbert Louis Bernstein et al., PLDI 2022
+- [DaCeML: A Data-Centric Compiler for Machine Learning](https://arxiv.org/abs/2110.10802) by Oliver Rausch et al., ICS 22
 - [FreeTensor: A Free-Form DSL with Holistic Optimizations for Irregular Tensor Programs](https://dl.acm.org/doi/10.1145/3519939.3523448) by Shizhi Tang et al., PLDI 2022
 - [Roller: Fast and Efficient Tensor Compilation for Deep Learning](https://www.usenix.org/conference/osdi22/presentation/zhu) by Hongyu Zhu et al., OSDI 2022
 - [AStitch: Enabling a New Multi-dimensional Optimization Space for Memory-Intensive ML Training and Inference on Modern SIMT Architectures](https://dl.acm.org/doi/10.1145/3503222.3507723) by Zhen Zheng et al., ASPLOS 2022
@@ -57,6 +61,7 @@ A list of awesome compiler projects and papers for tensor computation and deep l
 - [MLIR: Scaling Compiler Infrastructure for Domain Specific Computation](https://ieeexplore.ieee.org/document/9370308) by Chris Lattner et al., CGO 2021
 - [A Tensor Compiler for Unified Machine Learning Prediction Serving](https://www.usenix.org/conference/osdi20/presentation/nakandala) by Supun Nakandala et al., OSDI 2020
 - [Rammer: Enabling Holistic Deep Learning Compiler Optimizations with rTasks](https://www.usenix.org/conference/osdi20/presentation/ma) by Lingxiao Ma et al., OSDI 2020
+- [Stateful Dataflow Multigraphs: A Data-Centric Model for Performance Portability on Heterogeneous Architectures](https://arxiv.org/abs/1902.10345) by Tal Ben-Nun et al., SC 2019
 - [TASO: The Tensor Algebra SuperOptimizer for Deep Learning](https://dl.acm.org/doi/abs/10.1145/3341301.3359630) by Zhihao Jia et al., SOSP 2019
 - [Tiramisu: A polyhedral compiler for expressing fast and portable code](https://arxiv.org/abs/1804.10694) by Riyadh Baghdadi et al., CGO 2019
 - [Triton: an intermediate language and compiler for tiled neural network computations](https://dl.acm.org/doi/abs/10.1145/3315508.3329973) by Philippe Tillet et al., MAPL 2019
@@ -92,8 +97,9 @@ A list of awesome compiler projects and papers for tensor computation and deep l
 - [Automatically Scheduling Halide Image Processing Pipelines](http://graphics.cs.cmu.edu/projects/halidesched/) by Ravi Teja Mullapudi et al., SIGGRAPH 2016
 
 ### Cost Model
+- [TLP: A Deep Learning-based Cost Model for Tensor Program Tuning](https://arxiv.org/abs/2211.03578) by Yi Zhai et al., ASPLOS 2023
 - [An Asymptotic Cost Model for Autoscheduling Sparse Tensor Programs](https://arxiv.org/abs/2111.14947) by Peter Ahrens et al., PLDI 2022
-- [TenSet: A Large-scale Program Performance Dataset for Learned Tensor Compilers](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/a684eceee76fc522773286a895bc8436-Abstract-round1.html) by Lianmin Zheng., NeurIPS 2021
+- [TenSet: A Large-scale Program Performance Dataset for Learned Tensor Compilers](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/a684eceee76fc522773286a895bc8436-Abstract-round1.html) by Lianmin Zheng et al., NeurIPS 2021
 - [A Deep Learning Based Cost Model for Automatic Code Optimization](https://proceedings.mlsys.org/paper/2021/hash/3def184ad8f4755ff269862ea77393dd-Abstract.html) by Riyadh Baghdadi et al., MLSys 2021
 - [A Learned Performance Model for the Tensor Processing Unit](https://arxiv.org/abs/2008.01040) by Samuel J. Kaufman et al., MLSys 2021
 - [DYNATUNE: Dynamic Tensor Program Optimization in Deep Neural Network Compilation](https://openreview.net/forum?id=GTGb3M_KcUl) by Minjia Zhang et al., ICLR 2021
@@ -137,19 +143,21 @@ A list of awesome compiler projects and papers for tensor computation and deep l
 - [FeatGraph: A Flexible and Efficient Backend for Graph Neural Network Systems](https://arxiv.org/abs/2008.11359) by Yuwei Hu et al., SC 2020
 
 ### Distributed Computing
+- [SpDISTAL: Compiling Distributed Sparse Tensor Computations](https://arxiv.org/abs/2207.13901) by Rohan Yadav et al., SC 2022
 - [Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning](https://arxiv.org/abs/2201.12023) by Lianmin Zheng, Zhuohan Li, Hao Zhang et al., OSDI 2022
 - [Unity: Accelerating DNN Training Through Joint Optimization of Algebraic Transformations and Parallelization](https://www.usenix.org/conference/osdi22/presentation/unger) by Colin Unger, Zhihao Jia, et al., OSDI 2022
 - [Synthesizing Optimal Parallelism Placement and Reduction Strategies on Hierarchical Systems for Deep Learning](https://arxiv.org/abs/2110.10548) by Ningning Xie, Tamara Norman, Diminik Grewe, Dimitrios Vytiniotis et al., MLSys 2022
 - [DISTAL: The Distributed Tensor Algebra Compiler](https://arxiv.org/abs/2203.08069) by Rohan Yadav et al., PLDI 2022
 - [GSPMD: General and Scalable Parallelization for ML Computation Graphs](https://arxiv.org/abs/2105.04663) by Yuanzhong Xu et al., arXiv 2021
+- [Breaking the Computation and Communication Abstraction Barrier in Distributed Machine Learning Workloads](https://arxiv.org/abs/2105.05720) by Abhinav Jangda et al., ASPLOS 2022
 - [OneFlow: Redesign the Distributed Deep Learning Framework from Scratch](https://arxiv.org/abs/2110.15032) by Jinhui Yuan et al., arXiv 2021
-- [Breaking the Computation and Communication Abstraction Barrier in Distributed Machine Learning Workloads](https://arxiv.org/abs/2105.05720) by Abhinav Jangda et al., arXiv 2021
 - [Beyond Data and Model Parallelism for Deep Neural Networks](https://proceedings.mlsys.org/paper/2019/hash/c74d97b01eae257e44aa9d5bade97baf-Abstract.html) by Zhihao et al., MLSys 2019
 - [Supporting Very Large Models using Automatic Dataflow Graph Partitioning](https://dl.acm.org/doi/10.1145/3302424.3303953) by Minjie Wang et al., EuroSys 2019
 - [Distributed Halide](https://dl.acm.org/doi/abs/10.1145/3016078.2851157) by Tyler Denniston et al., PPoPP 2016
 
 ### Quantization and Sparsification
-- [SparseTIR: Composable Abstractions for Sparse Compilation in Deep Learning](https://arxiv.org/abs/2207.04606) by Zihao ye et al., arXiv 2022
+- [SparseTIR: Composable Abstractions for Sparse Compilation in Deep Learning](https://arxiv.org/abs/2207.04606) by Zihao Ye et al., arXiv 2022
+- [SparseLNR: Accelerating Sparse Tensor Computations Using Loop Nest Restructuring](https://dl.acm.org/doi/pdf/10.1145/3524059.3532386) by Adhitha Dias et al., ICS 2022
 - [SparTA: Deep-Learning Model Sparsity via Tensor-with-Sparsity-Attribute](https://www.usenix.org/conference/osdi22/presentation/zheng-ningxin) by Ningxin Zheng et al., OSDI 2022
 - [Compiler Support for Sparse Tensor Computations in MLIR](https://arxiv.org/abs/2202.04305) by Aart J.C. Bik et al., arXiv 2022
 - [Automatic Generation of High-Performance Quantized Machine Learning Kernels](https://dl.acm.org/doi/10.1145/3368826.3377912) by Meghan Cowan et al., CGO 2020
